@@ -1,8 +1,10 @@
-#store the number of rabbit
+#pseudocode
+# produce rabbits
+# How many rabbits have been born?
+#  If less than 100: keep producing
+#  If more than 100: DONE!
 n=4
-#store the number of generation
 g=2
-#use a circulate to caculate the generation
 while(n<=100):
     n=n*2
     g=g+1
