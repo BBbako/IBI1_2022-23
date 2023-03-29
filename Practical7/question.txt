@@ -1,0 +1,3 @@
+ Question:  Plot a boxplot of total case numbers of  Germany and China on 31 March 2020.
+ the code to solve the question begins at line 57
+ result: the total case numbers of China is more concentrative than Germany.
