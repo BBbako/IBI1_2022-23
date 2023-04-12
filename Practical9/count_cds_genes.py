@@ -5,11 +5,7 @@ elif stop_codons == 'TAG':
     file = open('TAG_stop_genes.fa', 'w')
 elif stop_codons == 'TGA':
     file = open('TAG_stop_genes.fa', 'w')
-seq = input('input the name and sequence of genes in fasta format')
-f = open('all_genes.fa', 'w')
-line1 = seq
-f.write(line1)
-f.close()
+f = open('C:/Users/Asus/Downloads/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa')
 ls1 = []
 ls2 = []
 seq1 = {}
@@ -29,14 +25,18 @@ for i in range(len(ls2)):
     num = 0
     lenth = len(seq1[ls2[i]])
     for e in range(3, lenth - 2, 1):
-        if seq[ls2[i]][e:e + 3] == stop_codons:
+        if seq1[ls2[i]][e:e + 3] == stop_codons:
             num = num + 1
     line1 = ls2[i] + str(num)
     line2 = seq1[ls2[i]]
     file.write('\n'+line1)
     file.write('\n'+line2)
-x = open('file')
+if stop_codons == 'TAA':
+    x = open('TAA_stop_genes.fa')
+elif stop_codons == 'TAG':
+    x = open('TAG_stop_genes.fa')
+elif stop_codons == 'TGA':
+    x = open('TAG_stop_genes.fa')
 for line in x:
     print(line[:-1])
-x.close()
-file.close()
+f.close()
