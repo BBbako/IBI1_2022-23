@@ -1,0 +1,6 @@
+Alignment score : human and mouse : score= 3579.0,  percentage= 82.11%
+                  human and cat   : score= 3717.0,  percentage= 85.22%
+                  cat and mouse   : score= 3592.0,  percentage= 81.74%
+From those data we have got, we could find the sequence of human, mouse and cat is very similar. 
+Because the score is close and the percentage of identical amino acids for each of the three comparisons is in a high level. 
+Which means the relatedness of human, mouse and cat is really close.
